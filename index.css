@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Encode+Sans&display=swap');
+
+*{
+    font-family: "Cairo Play", serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.heading{
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+
+    
+}
+.heading:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, white, white);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    padding: 25px 50px;
+    
+   
+}
+.ultags li{
+    display: inline;
+   
+    margin: 0 10px;
+    font-weight: 700;
+    cursor: pointer;
+   
+    
+}
+.ultags li:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toptext1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+   
+   
+}
+.shopnowbtn{
+    background-color:darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+    padding: 10px;
+    margin: 20px;
+   
+}
+.shopnowbtn:hover{
+    background-color: #6a5acd;
+}
+
+.imgdiv{
+    margin: 0 50px;
+    border-radius: 10px;
+}
+.imgdiv:hover{
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, white, white);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.parashopexp{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.paraadj{
+    margin-right: 20px;
+}
+.threerows{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.sg{
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin: 0 5px;
+   padding: 10px;
+
+    
+}
+.imgfour{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    flex-basis: 20%;
+}
+.imghover:hover{
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, white, white);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.newarrival-btn{
+   
+    
+    
+    justify-content:space-between;
+    margin: 5px;
+    padding: 5px;
+    transform: translateX(-50%);
+   
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    
+}
+
+.shop-now-btn:hover {
+    opacity: 1;
+    background-color: slateblue;
+}
+
+.txtarea{
+    border: 3px solid black;
+    width: 1270px;
+    resize: none;
+    height: 45px;
+   
+
+}
+.txtarea:focus{
+    outline: none;
+}
+
+.sbtn{
+    background-color: transparent;
+    color: black;
+    border: none;
+    width: 120px;
+    border-radius: 10px;
+    padding: 5px;
+   font-size: medium;
+}
+.bottom{
+    background-color:darkslateblue;
+    width: 100%;
+    height: 350px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+.sidenb{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .heading:hover {
+        transform: translateY(-5px) scale(1.05);
+        background: linear-gradient(135deg, white, white);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .ultags {
+        display:none;
+      
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .sidenb {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px;
+        background: linear-gradient(135deg, #6a5acd, white);
+        padding: 15px 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .sidenb:hover {
+        transform: translateY(-5px) scale(1.05);
+        background: linear-gradient(135deg, white, #6a5acd);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sidenb:active {
+        transform: translateY(0);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    .ultags.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .parashopexp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .paradiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .toptext1 {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .imgdiv img {
+        width: 90%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+    .shopnowbtn{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .threerows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sg {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+.imgfour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default for desktop */
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.imgfour img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .imgfour {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row for mobile */
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .txtarea{
+        width: 90%;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .bottom {
+        text-align: center;
+        padding: 20px;
+        height: 380px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
